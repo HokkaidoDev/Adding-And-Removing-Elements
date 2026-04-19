@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TODO</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="todo-app">
+    <!-- <form 
+      class="todo-app__form"
+      onsubmit="this.reset(); return false"
+    > -->
+    <form class="todo-app__form">
+    <!-- this.reset(); - метод очищення форми, this в данному
+     випадку це цей елемент тобто <form>. Не зручно коли код
+     розкиданий в різних місцях, тому ми його приберемо. Також
+     onsubmit="return false" ми замінимо на код в js в слухачі
+     подій на event.preventDefault(); а this.reset(); на 
+     form.reset() в js -->
+      <input name="todo" placeholder="Enter a todo">
+      <button>Add</button>
+    </form>
+
+    <ul class="todo-app__list">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+  </div>
+</body>
+</html>
